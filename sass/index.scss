@@ -1,0 +1,61 @@
+// Partials
+@import "partials/_general_styles";
+@import "partials/_clearfix";
+@import "partials/_reset";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+h1 {
+  font-size: 4em;
+  color: white;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.welcomeImage {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
+}
+
+.welcomeMessage{
+  box-sizing: border-box;
+  text-align: center;
+  position: absolute;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100vw;
+  padding: 10px;
+  top: 40%;
+  // border: 2px solid black;
+  // background-color: steelblue;
+  text-shadow: 2px 2px black;
+}
+
+.myName {
+  color: white;
+  font-style: italic;
+  margin: 10px;
+}
+
+.githubLogo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.linkedinLogo {
+  width: 150px;
+  height: 50px;
+  margin: 0 auto;
+}
