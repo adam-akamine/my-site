@@ -4,13 +4,14 @@
 @import "partials/_reset";
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  // font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito', sans-serif;
+  // background-color: black;
+  background: linear-gradient(to bottom, darkslategray, black);
 }
 
 h1 {
   font-size: 4em;
-  color: white;
 }
 
 h2 {
@@ -21,10 +22,42 @@ h3 {
   font-size: 2em;
 }
 
+.persistentHeader {
+  position: fixed;
+  top: 0;
+  margin: auto;
+  z-index: 10;
+  width: 100%;
+  // opacity: 0.5;
+  background-color: Gainsboro;
+  // background: linear-gradient(to bottom, cyan, cornflowerBlue);
+  color: black;
+  height: 60px;
+  text-align: right;
+}
+
+.linkImages a{
+  text-decoration: none;
+}
+
+.githubLogo {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.linkedinLogo {
+  width: 250px;
+  height: 50px;
+  margin: 0 auto;
+}
+
 .welcomeImage {
-  width: 100vw;
-  height: 100vh;
+  box-sizing: border-box;
+  width: 99.5vw;
+  height: 99.5vh;
   opacity: 0.5;
+  overflow: hidden;
   // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 }
 
@@ -37,25 +70,77 @@ h3 {
   width: 100vw;
   padding: 10px;
   top: 40%;
-  // border: 2px solid black;
-  // background-color: steelblue;
   text-shadow: 2px 2px black;
+  color: Gainsboro;
 }
 
+
 .myName {
-  color: white;
-  font-style: italic;
+  color: Gainsboro;
+  // font-style: italic;
   margin: 10px;
 }
 
-.githubLogo {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 
-.linkedinLogo {
-  width: 150px;
-  height: 50px;
-  margin: 0 auto;
+.fadeInUp {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUpDelayed2 {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUpDelayed3 {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+.fadeInUpDelayed4 {
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+  animation-name: slideInRight;
+  opacity: 0;
+  animation-duration: 2s;
+  animation-delay: 4s;
+  animation-fill-mode: forwards;
 }
