@@ -22,18 +22,10 @@ h3 {
   font-size: 2em;
 }
 
-.persistentHeader {
-  position: fixed;
-  top: 0;
-  margin: auto;
-  z-index: 10;
-  width: 100%;
-  // opacity: 0.5;
-  background-color: Gainsboro;
-  // background: linear-gradient(to bottom, cyan, cornflowerBlue);
-  color: black;
-  height: 60px;
-  text-align: right;
+.navbar-default {
+  margin: 0 auto;
+  z-index: 500;
+  width: 100vw;
 }
 
 .linkImages a{
