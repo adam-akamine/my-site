@@ -66,7 +66,8 @@ table {
 
 body {
   font-family: 'Nunito', sans-serif;
-  background: linear-gradient(to bottom, darkslategray, black); }
+  background: linear-gradient(to bottom, darkslategray, black);
+  overflow: hidden; }
 
 h1 {
   font-size: 4em; }
@@ -97,8 +98,8 @@ h3 {
 
 .welcomeImage {
   box-sizing: border-box;
-  width: 99.5vw;
-  height: 99.5vh;
+  width: 100vw;
+  height: 100vh;
   opacity: 0.5;
   overflow: hidden; }
 
@@ -169,3 +170,41 @@ h3 {
   animation-duration: 2s;
   animation-delay: 4s;
   animation-fill-mode: forwards; }
+
+.wave {
+  background: #184b68;
+  height: 20px;
+  position: relative; }
+
+.wave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px); }
+
+.wave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px); }
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 2px;
+  bottom: 20px;
+  z-index: 2000;
+  width: 100%;
+  text-align: right;
+  padding: 1rem;
+  color: gray; }

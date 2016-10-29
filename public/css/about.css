@@ -65,7 +65,11 @@ table {
   border-spacing: 0; }
 
 body {
-  font-family: 'Nunito', sans-serif; }
+  font-family: 'Nunito', sans-serif;
+  background-color: #184b68; }
+
+.navbar-nav > .active {
+  background-color: #184b68; }
 
 h1 {
   font-size: 4em; }
@@ -77,9 +81,10 @@ h3 {
   font-size: 2em; }
 
 .navbar-default {
-  margin: 0 auto;
+  border-radius: 0;
   z-index: 500;
-  width: 100vw; }
+  width: 100vw;
+  margin-bottom: 0; }
 
 .linkImages a {
   text-decoration: none; }
@@ -101,28 +106,72 @@ h3 {
   opacity: 0.5;
   overflow: hidden; }
 
-.aboutContainer {
-  box-sizing: border-box;
+.wave {
+  background: #184b68;
+  height: 20px;
+  position: relative; }
+
+.wave::before {
+  content: "";
   position: absolute;
-  margin-right: auto;
-  margin-left: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, white 13px); }
+
+.wave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, white 12px, transparent 13px); }
+
+.wave {
+  margin-bottom: 20px; }
+
+.endWave {
+  background: white;
+  height: 50px;
+  position: relative; }
+
+.endWave::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle at 10px -5px, transparent 12px, #184b68 13px); }
+
+.endWave::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image: radial-gradient(circle at 10px 15px, #184b68 12px, transparent 13px); }
+
+.aboutContainer {
   width: 100vw;
-  top: 10%;
   text-shadow: 2px 2px black;
-  color: Gainsboro;
+  color: white;
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  background: #499bea;
-  background: -moz-radial-gradient(center, ellipse cover, #499bea 0%, #207ce5 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #499bea), color-stop(100%, #207ce5));
-  background: -webkit-radial-gradient(center, ellipse cover, #499bea 0%, #207ce5 100%);
-  background: -o-radial-gradient(center, ellipse cover, #499bea 0%, #207ce5 100%);
-  background: -ms-radial-gradient(center, ellipse cover, #499bea 0%, #207ce5 100%);
-  background: radial-gradient(ellipse at center, #499bea 0%, #207ce5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 ); }
+  text-align: center; }
 
 .theWebDeveloperContainer {
-  margin-bottom: 20px; }
+  margin-top: 20px; }
 
 .theWebDeveloper {
   font-size: 1.5em; }
@@ -130,8 +179,30 @@ h3 {
 .theITConsultant {
   font-size: 1.5em; }
 
+.toolsetITContainer, .toolsetWebContainer {
+  margin-top: 20px;
+  margin-bottom: 5px; }
+
 .toolsetWeb, .toolsetIT {
   margin-top: 10px;
   width: 100%;
-  height: 20vh;
   background-color: white; }
+
+.toolsetWeb img {
+  width: 15vw;
+  margin: 5px; }
+
+.toolsetIT img {
+  width: 5vw;
+  margin: 0 25px; }
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+  z-index: 2000;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: gray; }

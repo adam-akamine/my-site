@@ -3,10 +3,16 @@
 @import "partials/_clearfix";
 @import "partials/_reset";
 
+//variables
+$primary-bg: #184b68;
+
 body {
-  // font-family: 'Montserrat', sans-serif;
   font-family: 'Nunito', sans-serif;
-  // background-color: black;
+  background-color: $primary-bg;
+}
+
+.navbar-nav > .active {
+  background-color: $primary-bg;
 }
 
 h1 {
@@ -22,9 +28,10 @@ h3 {
 }
 
 .navbar-default {
-  margin: 0 auto;
+  border-radius: 0;
   z-index: 500;
   width: 100vw;
+  margin-bottom: 0;
 }
 
 .linkImages a{
@@ -49,67 +56,85 @@ h3 {
   height: 99.5vh;
   opacity: 0.5;
   overflow: hidden;
-  // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) );
 }
 
-// .wave{
-//   background: darkblue;
-//   height: 50px;
-//   position: relative;
-// }
-// .wave::before{
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   background-repeat: repeat;
-//   height: 10px;
-//   background-size: 20px 20px;
-//   background-image:
-//     radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
-// }
-// .wave::after{
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: 0;
-//   right: 0;
-//   background-repeat: repeat;
-//   height: 15px;
-//   background-size: 40px 20px;
-//   background-image:
-//     radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
-// }
+.wave{
+  background: $primary-bg;
+  height: 20px;
+  position: relative;
+}
+.wave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, white 13px);
+}
+.wave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, white 12px, transparent 13px);
+}
+
+.wave {
+  margin-bottom: 20px;
+}
+.endWave{
+  background: white;
+  height: 50px;
+  position: relative;
+}
+.endWave::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 10px;
+  background-size: 20px 20px;
+  background-image:
+    radial-gradient(circle at 10px -5px, transparent 12px, $primary-bg 13px);
+}
+.endWave::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-repeat: repeat;
+  height: 15px;
+  background-size: 40px 20px;
+  background-image:
+    radial-gradient(circle at 10px 15px, $primary-bg 12px, transparent 13px);
+}
 
 .aboutContainer{
-  box-sizing: border-box;
-  position: absolute;
-  margin-right: auto;
-  margin-left: auto;
   width: 100vw;
-  top: 10%;
   text-shadow: 2px 2px black;
-  color: Gainsboro;
+  color: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  background: rgba(73,155,234,1);
-background: -moz-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(32,124,229,1)));
-background: -webkit-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-background: -o-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-background: -ms-radial-gradient(center, ellipse cover, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-background: radial-gradient(ellipse at center, rgba(73,155,234,1) 0%, rgba(32,124,229,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#207ce5', GradientType=1 );
 }
 
 .theWebDeveloperContainer {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .theWebDeveloper {
   font-size: 1.5em;
-  // padding: 10px;
 }
 
 .theITConsultantContainer {
@@ -117,12 +142,37 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', end
 }
 .theITConsultant {
   font-size: 1.5em;
-  // padding: 10px;
+}
+
+.toolsetITContainer, .toolsetWebContainer {
+  margin-top: 20px;
+  margin-bottom: 5px;
 }
 
 .toolsetWeb, .toolsetIT {
   margin-top: 10px;
   width: 100%;
-  height: 20vh;
   background-color: white;
+}
+
+.toolsetWeb img {
+    width: 15vw;
+    margin: 5px;
+  }
+
+.toolsetIT img {
+    width: 5vw;
+    margin: 0 25px;
+  }
+
+.footer {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  right: 2px;
+  bottom: 5px;
+  z-index: 2000;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  color: gray;
 }
