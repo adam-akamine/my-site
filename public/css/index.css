@@ -170,6 +170,10 @@ h3 {
   animation-duration: 2s;
   animation-delay: 4s;
   animation-fill-mode: forwards; }
+  @media only screen and (min-width: 200px) and (max-width: 760px) {
+    .slideInRight {
+      animation: none;
+      opacity: 1; } }
 
 .wave {
   background: #184b68;
