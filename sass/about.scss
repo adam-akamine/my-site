@@ -48,6 +48,14 @@ h3 {
   margin: 0 auto;
 }
 
+a:hover {
+    text-decoration: none;
+  }
+
+.contactImages {
+  margin-top: 20px;
+}
+
 .linkedinLogo {
   width: 200px;
   height: 40px;
@@ -125,7 +133,7 @@ h3 {
     radial-gradient(circle at 10px 15px, $primary-bg 12px, transparent 13px);
 }
 
-.aboutContainer{
+.aboutContainer, .contactContainer{
   width: 100vw;
   text-shadow: 2px 2px black;
   color: white;
@@ -141,6 +149,17 @@ h3 {
   font-size: 1.5em;
 }
 
+.contactTitle {
+  margin-top: 10px;
+}
+
+.contactInfo {
+  font-size: 1.5em;
+  color: #184b68;
+  text-decoration: none;
+  text-shadow: none;
+}
+
 .theITConsultantContainer {
 
 }
@@ -154,6 +173,12 @@ h3 {
 }
 
 .toolsetWeb, .toolsetIT {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+}
+
+.contactInfoContainer {
   margin-top: 10px;
   width: 100%;
   background-color: white;
