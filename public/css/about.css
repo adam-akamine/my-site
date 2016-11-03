@@ -192,7 +192,10 @@ a:hover {
   font-size: 1.5em;
   color: #184b68;
   text-decoration: none;
-  text-shadow: none; }
+  text-shadow: none;
+  width: 60%;
+  margin: 0 auto;
+  line-height: 35px; }
 
 .theITConsultant {
   font-size: 1.5em; }
