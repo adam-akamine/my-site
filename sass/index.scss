@@ -193,4 +193,8 @@ h3 {
   text-align: right;
   padding: 1rem;
   color: gray;
+
+  @include small {
+    display: none;
+  }
 }

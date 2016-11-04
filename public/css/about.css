@@ -232,3 +232,6 @@ a:hover {
   text-align: center;
   padding: 1rem;
   color: gray; }
+  @media only screen and (min-width: 200px) and (max-width: 760px) {
+    .footer {
+      display: none; } }

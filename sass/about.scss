@@ -6,6 +6,16 @@
 //variables
 $primary-bg: #184b68;
 
+// media query ranges
+$small: "only screen and (min-width: 200px) and (max-width: 760px)";
+
+// Mixins
+@mixin small {
+  @media #{$small} {
+    @content;
+  }
+}
+
 body {
   font-family: 'Nunito', sans-serif;
   background-color: $primary-bg;
@@ -207,4 +217,8 @@ a:hover {
   text-align: center;
   padding: 1rem;
   color: gray;
+
+  @include small {
+    display: none;
+  }
 }
