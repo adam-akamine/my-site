@@ -222,10 +222,12 @@ a:hover {
 
 .toolsetIT img {
     width: 5vw;
-    margin: 0 25px;
+    margin: 20px;
+    // margin: 0 25px;
 
     @include small {
       width: 10vw;
+      height: 5vh;
     }
   }
 

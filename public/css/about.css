@@ -235,10 +235,11 @@ a:hover {
 
 .toolsetIT img {
   width: 5vw;
-  margin: 0 25px; }
+  margin: 20px; }
   @media only screen and (min-width: 200px) and (max-width: 760px) {
     .toolsetIT img {
-      width: 10vw; } }
+      width: 10vw;
+      height: 5vh; } }
 
 .footer {
   font-family: 'Montserrat', sans-serif;
