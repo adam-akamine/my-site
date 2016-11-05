@@ -157,6 +157,13 @@ a:hover {
 
 .theWebDeveloper {
   font-size: 1.5em;
+  text-align: center;
+
+  @include small {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .contactTitle {
@@ -178,6 +185,13 @@ a:hover {
 }
 .theITConsultant {
   font-size: 1.5em;
+  text-align: center;
+
+  @include small {
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 }
 
 .toolsetITContainer, .toolsetWebContainer {
@@ -200,11 +214,19 @@ a:hover {
 .toolsetWeb img {
     width: 15vw;
     margin: 5px;
+
+    @include small {
+      width: 25vw;
+    }
   }
 
 .toolsetIT img {
     width: 5vw;
     margin: 0 25px;
+
+    @include small {
+      width: 10vw;
+    }
   }
 
 .footer {
