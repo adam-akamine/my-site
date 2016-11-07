@@ -19,6 +19,8 @@ $small: "only screen and (min-width: 200px) and (max-width: 760px)";
 body {
   font-family: 'Nunito', sans-serif;
   background-color: $primary-bg;
+  display: flex;
+  flex-direction: column;
 }
 
 .navbar-nav > .active {
@@ -144,11 +146,13 @@ a:hover {
 }
 
 .aboutContainer, .contactContainer{
+  flex: 1;
   width: 100vw;
   text-shadow: 2px 2px black;
   color: white;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 .theWebDeveloperContainer {
@@ -180,8 +184,8 @@ a:hover {
   line-height: 35px;
 }
 
-.theITConsultantContainer {
-
+.theITConsultantTitle {
+  margin-top: 15px;
 }
 .theITConsultant {
   font-size: 1.5em;
@@ -231,18 +235,25 @@ a:hover {
     }
   }
 
-.footer {
+.footer, .contactFooter {
   font-family: 'Montserrat', sans-serif;
-  position: absolute;
-  right: 2px;
-  bottom: 5px;
+  // position: absolute;
+  // right: 2px;
+  // bottom: 5px;
   z-index: 2000;
   width: 100%;
   text-align: center;
-  padding: 1rem;
-  color: gray;
+  // padding: 1rem;
+  color: white;
+  padding: 20px;
+  margin-top: 40px;
 
-  @include small {
-    display: none;
-  }
+  // @include small {
+  //   display: none;
+  // }
+}
+
+.contactFooter {
+  position: relative;
+  bottom: 5px;
 }
