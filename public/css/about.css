@@ -206,6 +206,9 @@ a:hover {
   width: 60%;
   margin: 0 auto;
   line-height: 35px; }
+  @media only screen and (min-width: 200px) and (max-width: 760px) {
+    .contactInfo {
+      width: 80%; } }
 
 .theITConsultantTitle {
   margin-top: 15px; }

@@ -182,6 +182,10 @@ a:hover {
   width: 60%;
   margin: 0 auto;
   line-height: 35px;
+
+  @include small {
+    width: 80%;
+  }
 }
 
 .theITConsultantTitle {
