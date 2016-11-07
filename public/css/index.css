@@ -219,3 +219,37 @@ h3 {
   @media only screen and (min-width: 200px) and (max-width: 760px) {
     .footer {
       display: none; } }
+
+.icon-bar {
+  animation-name: glowBlue;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3; }
+
+.navbar-default .navbar-toggle {
+  animation-name: borderBlue;
+  animation-duration: 3s;
+  animation-delay: 3.5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 3; }
+
+@keyframes glowBlue {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 1;
+    background-color: #184b68; }
+  to {
+    opacity: 1;
+    background-color: #888; } }
+
+@keyframes borderBlue {
+  from {
+    opacity: 1; }
+  50% {
+    opacity: 1;
+    border: 1px solid #184b68; }
+  to {
+    opacity: 1;
+    border: 1px solid #888; } }
