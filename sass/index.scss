@@ -205,15 +205,16 @@ h3 {
   animation-duration: 3s;
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
 }
 
 .navbar-default .navbar-toggle {
+  border-color: #888;
   animation-name: borderBlue;
   animation-duration: 3s;
   animation-delay: 3.5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: 3;
+  animation-iteration-count: infinite;
 }
 
 @keyframes glowBlue {
@@ -232,6 +233,7 @@ h3 {
 
 @keyframes borderBlue {
   from {
+    border: 1px solid #888;
     opacity: 1;
   }
   50% {
