@@ -242,20 +242,12 @@ a:hover {
 
 .footer, .contactFooter {
   font-family: 'Montserrat', sans-serif;
-  // position: absolute;
-  // right: 2px;
-  // bottom: 5px;
   z-index: 2000;
   width: 100%;
   text-align: center;
-  // padding: 1rem;
   color: white;
   padding: 20px;
   margin-top: 40px;
-
-  // @include small {
-  //   display: none;
-  // }
 }
 
 .contactFooter {
